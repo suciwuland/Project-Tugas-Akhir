@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'tugas_akhir.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'heart_risk',
+        'USER': 'postgres',
+        'PASSWORD': 'suci123',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
